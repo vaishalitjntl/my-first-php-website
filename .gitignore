@@ -1,0 +1,7 @@
+# Local database credentials
+manufacturing/includes/db.php
+
+# Temporary diagnostic files
+manufacturing/php-info.php
+manufacturing/test-db.php
+
