@@ -2,215 +2,82 @@
 include 'includes/header.php';
 ?>
 
-<section class="confirmation-page">
+<main>
 
-    <div class="confirmation-container">
+    <section class="page-header">
 
-        <div class="success-icon">
-            ✓
-        </div>
+        <div class="container">
 
-        <h1>Order Placed Successfully!</h1>
+            <h1>Order Confirmation</h1>
 
-        <p class="success-message">
-            Thank you for your order. Your order has been received successfully.
-        </p>
-
-        <div id="orderDetails">
-
-            <!-- Order details will appear here -->
+            <p>
+                Thank you for placing your order with us.
+            </p>
 
         </div>
 
-        <div class="confirmation-actions">
-
-            <a href="track-order.php" class="track-order-btn">
-                Track Your Order
-            </a>
-
-            <a href="products.php" class="continue-shopping-btn">
-                Continue Shopping
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
+    </section>
 
 
-<script>
+    <section class="content-section">
 
-document.addEventListener("DOMContentLoaded", function () {
+        <div class="container">
 
-    const orderData =
-        JSON.parse(
-            localStorage.getItem("latestOrder")
-        );
+            <div class="order-confirmation-box">
 
-    const orderDetails =
-        document.getElementById("orderDetails");
+                <div class="confirmation-icon">
+                    ✓
+                </div>
 
-
-    if (!orderData) {
-
-        orderDetails.innerHTML = `
-
-            <div class="no-order">
-
-                <h2>No Order Found</h2>
+                <h2>Order Placed Successfully!</h2>
 
                 <p>
-                    We could not find your recent order.
+                    Thank you for your order.
+                    We have received your order details and
+                    will contact you for confirmation.
                 </p>
 
-                <a href="products.php">
-                    Go to Products
-                </a>
 
-            </div>
+                <div class="order-summary">
 
-        `;
-
-        return;
-    }
-
-
-    let productsHTML = "";
-
-
-    orderData.items.forEach(function (item) {
-
-        const itemTotal =
-            item.price * item.quantity;
-
-
-        productsHTML += `
-
-            <div class="confirmation-product">
-
-                <div>
-
-                    <h3>${item.name}</h3>
+                    <h3>Order Details</h3>
 
                     <p>
-                        Quantity: ${item.quantity}
+                        <strong>Order Number:</strong>
+                        <span id="order-number">
+                            ORD1001
+                        </span>
+                    </p>
+
+                    <p>
+                        <strong>Order Status:</strong>
+                        <span class="status-badge status-pending">
+                            Pending Confirmation
+                        </span>
                     </p>
 
                 </div>
 
-                <strong>
-                    ₹${itemTotal.toLocaleString('en-IN')}
-                </strong>
 
-            </div>
+                <div class="confirmation-actions">
 
-        `;
+                    <a href="products.php">
+                        Continue Shopping
+                    </a>
 
-    });
+                    <a href="track-order.php">
+                        Track Order
+                    </a>
 
-
-    orderDetails.innerHTML = `
-
-        <div class="order-info">
-
-            <div class="order-info-row">
-
-                <span>Order ID</span>
-
-                <strong>
-                    ${orderData.orderId}
-                </strong>
-
-            </div>
-
-
-            <div class="order-info-row">
-
-                <span>Order Date</span>
-
-                <strong>
-                    ${orderData.orderDate}
-                </strong>
-
-            </div>
-
-
-            <div class="order-info-row">
-
-                <span>Customer</span>
-
-                <strong>
-                    ${orderData.customerName}
-                </strong>
-
-            </div>
-
-
-            <div class="order-info-row">
-
-                <span>Phone</span>
-
-                <strong>
-                    ${orderData.customerPhone}
-                </strong>
-
-            </div>
-
-
-            <div class="order-info-row">
-
-                <span>Payment Method</span>
-
-                <strong>
-                    ${orderData.payment}
-                </strong>
+                </div>
 
             </div>
 
         </div>
 
+    </section>
 
-        <div class="ordered-products">
-
-            <h2>Ordered Products</h2>
-
-            ${productsHTML}
-
-        </div>
-
-
-        <div class="delivery-info">
-
-            <h2>Delivery Address</h2>
-
-            <p>
-                ${orderData.address}
-            </p>
-
-            <p>
-                ${orderData.city} -
-                ${orderData.pincode}
-            </p>
-
-        </div>
-
-
-        <div class="order-total">
-
-            <span>Order Total</span>
-
-            <strong>
-                ₹${orderData.total.toLocaleString('en-IN')}
-            </strong>
-
-        </div>
-
-    `;
-
-});
-
-</script>
+</main>
 
 
 <?php

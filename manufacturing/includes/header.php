@@ -31,11 +31,13 @@
 
             <a href="index.php">Home</a>
 
-            <a href="about.php">About</a>
+           <a href="about.php">About Us</a>
 
-            <a href="products.php">Products</a>
+           <a href="products.php">Products</a>
 
-            <a href="contact.php">Contact</a>
+           <a href="how-it-works.php">How It Works</a>
+
+           <a href="contact.php">Contact Us</a>
 
             <a href="track-order.php">Track Order</a>
 

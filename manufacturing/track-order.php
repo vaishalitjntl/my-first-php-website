@@ -2,382 +2,226 @@
 include 'includes/header.php';
 ?>
 
-<section class="tracking-page">
+<main>
 
-    <div class="tracking-container">
+    <!-- Page Header -->
 
-        <div class="tracking-header">
+    <section class="page-header">
+
+        <div class="container">
 
             <h1>Track Your Order</h1>
 
             <p>
-                Enter your Order ID to check your order status.
+                Check the current status of your order.
             </p>
 
         </div>
 
-
-        <!-- Search Order -->
-
-        <div class="tracking-search">
-
-            <input
-                type="text"
-                id="orderIdInput"
-                placeholder="Enter your Order ID"
-            >
-
-            <button onclick="trackOrder()">
-                Track Order
-            </button>
-
-        </div>
+    </section>
 
 
-        <!-- Tracking Result -->
+    <!-- Track Order -->
 
-        <div id="trackingResult">
+    <section class="content-section">
 
-            <div class="tracking-placeholder">
+        <div class="container">
 
-                <div class="tracking-icon">
-                    🔎
-                </div>
+            <div class="track-order-box">
 
-                <h2>Enter your Order ID</h2>
+                <h2>Enter Your Order Details</h2>
 
                 <p>
-                    Your order status will appear here.
+                    Enter your order number and registered phone number
+                    to check your order status.
                 </p>
 
-            </div>
 
-        </div>
+                <form action="#" method="post">
 
-    </div>
+                    <div class="form-group">
 
-</section>
+                        <label for="order_number">
+                            Order Number
+                        </label>
 
+                        <input
+                            type="text"
+                            id="order_number"
+                            name="order_number"
+                            placeholder="Example: ORD1001"
+                            required
+                        >
 
-<script>
-
-function trackOrder() {
-
-    const enteredOrderId =
-        document.getElementById("orderIdInput")
-        .value
-        .trim();
-
-    const result =
-        document.getElementById("trackingResult");
+                    </div>
 
 
-    if (enteredOrderId === "") {
+                    <div class="form-group">
 
-        result.innerHTML = `
+                        <label for="phone">
+                            Phone Number
+                        </label>
 
-            <div class="tracking-error">
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            required
+                        >
 
-                <h3>Please enter your Order ID</h3>
-
-                <p>
-                    Enter the Order ID received after placing your order.
-                </p>
-
-            </div>
-
-        `;
-
-        return;
-    }
+                    </div>
 
 
-    const orderData =
-        JSON.parse(
-            localStorage.getItem("latestOrder")
-        );
+                    <button type="submit">
+                        Track Order
+                    </button>
 
-
-    if (!orderData) {
-
-        result.innerHTML = `
-
-            <div class="tracking-error">
-
-                <h3>Order Not Found</h3>
-
-                <p>
-                    We could not find an order.
-                </p>
-
-            </div>
-
-        `;
-
-        return;
-    }
-
-
-    if (
-        enteredOrderId.toUpperCase()
-        !== orderData.orderId.toUpperCase()
-    ) {
-
-        result.innerHTML = `
-
-            <div class="tracking-error">
-
-                <h3>Invalid Order ID</h3>
-
-                <p>
-                    Please check your Order ID and try again.
-                </p>
-
-            </div>
-
-        `;
-
-        return;
-    }
-
-
-    displayTracking(orderData);
-
-}
-
-
-function displayTracking(order) {
-
-    const result =
-        document.getElementById("trackingResult");
-
-
-    result.innerHTML = `
-
-        <div class="tracking-order-card">
-
-            <div class="tracking-order-header">
-
-                <div>
-
-                    <span>Order ID</span>
-
-                    <h2>
-                        ${order.orderId}
-                    </h2>
-
-                </div>
-
-                <div class="tracking-date">
-
-                    <span>Order Date</span>
-
-                    <strong>
-                        ${order.orderDate}
-                    </strong>
-
-                </div>
+                </form>
 
             </div>
 
 
-            <!-- Status -->
+            <!-- Sample Order Status -->
 
-            <div class="order-status">
+            <div class="order-tracking-result">
 
-                <div class="status-step active">
+                <h2>Order Status</h2>
 
-                    <div class="status-circle">
-                        ✓
-                    </div>
+                <div class="tracking-order-info">
 
-                    <div class="status-content">
+                    <p>
+                        <strong>Order Number:</strong>
+                        ORD1001
+                    </p>
 
-                        <h3>Order Placed</h3>
+                    <p>
+                        <strong>Customer:</strong>
+                        Sample Customer
+                    </p>
 
-                        <p>
-                            Your order has been received.
-                        </p>
+                    <p>
+                        <strong>Order Date:</strong>
+                        04-10-2026
+                    </p>
 
-                    </div>
+                    <p>
+                        <strong>Current Status:</strong>
 
-                </div>
+                        <span class="status-badge status-processing">
+                            Processing
+                        </span>
 
-
-                <div class="status-line active-line"></div>
-
-
-                <div class="status-step active">
-
-                    <div class="status-circle">
-                        ✓
-                    </div>
-
-                    <div class="status-content">
-
-                        <h3>Order Confirmed</h3>
-
-                        <p>
-                            Your order has been confirmed.
-                        </p>
-
-                    </div>
+                    </p>
 
                 </div>
 
 
-                <div class="status-line"></div>
+                <div class="tracking-timeline">
 
+                    <div class="tracking-step completed">
 
-                <div class="status-step current">
+                        <div class="tracking-dot">
+                            ✓
+                        </div>
 
-                    <div class="status-circle">
-                        ●
-                    </div>
+                        <div>
 
-                    <div class="status-content">
+                            <h3>Order Placed</h3>
 
-                        <h3>Processing</h3>
-
-                        <p>
-                            Your order is currently being processed.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="status-line"></div>
-
-
-                <div class="status-step">
-
-                    <div class="status-circle">
-                        4
-                    </div>
-
-                    <div class="status-content">
-
-                        <h3>Ready for Delivery</h3>
-
-                        <p>
-                            Your order will be prepared for delivery.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="status-line"></div>
-
-
-                <div class="status-step">
-
-                    <div class="status-circle">
-                        5
-                    </div>
-
-                    <div class="status-content">
-
-                        <h3>Delivered</h3>
-
-                        <p>
-                            Your order has been delivered.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- Customer -->
-
-            <div class="tracking-customer">
-
-                <h2>Customer Details</h2>
-
-                <p>
-                    <strong>Name:</strong>
-                    ${order.customerName}
-                </p>
-
-                <p>
-                    <strong>Phone:</strong>
-                    ${order.customerPhone}
-                </p>
-
-                <p>
-                    <strong>Address:</strong>
-                    ${order.address},
-                    ${order.city} -
-                    ${order.pincode}
-                </p>
-
-            </div>
-
-
-            <!-- Products -->
-
-            <div class="tracking-products">
-
-                <h2>Order Items</h2>
-
-                ${order.items.map(function(item) {
-
-                    return `
-
-                        <div class="tracking-product">
-
-                            <div>
-
-                                <strong>
-                                    ${item.name}
-                                </strong>
-
-                                <p>
-                                    Quantity:
-                                    ${item.quantity}
-                                </p>
-
-                            </div>
-
-                            <strong>
-                                ₹${(
-                                    item.price *
-                                    item.quantity
-                                ).toLocaleString('en-IN')}
-                            </strong>
+                            <p>
+                                Your order has been received.
+                            </p>
 
                         </div>
 
-                    `;
-
-                }).join("")}
-
-            </div>
+                    </div>
 
 
-            <div class="tracking-total">
+                    <div class="tracking-step completed">
 
-                <span>Total Amount</span>
+                        <div class="tracking-dot">
+                            ✓
+                        </div>
 
-                <strong>
-                    ₹${order.total.toLocaleString('en-IN')}
-                </strong>
+                        <div>
+
+                            <h3>Order Confirmed</h3>
+
+                            <p>
+                                Your order has been confirmed.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="tracking-step active">
+
+                        <div class="tracking-dot">
+                            3
+                        </div>
+
+                        <div>
+
+                            <h3>Processing</h3>
+
+                            <p>
+                                Your order is currently being prepared.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="tracking-step">
+
+                        <div class="tracking-dot">
+                            4
+                        </div>
+
+                        <div>
+
+                            <h3>Out for Delivery</h3>
+
+                            <p>
+                                Your order will be delivered to you.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="tracking-step">
+
+                        <div class="tracking-dot">
+                            5
+                        </div>
+
+                        <div>
+
+                            <h3>Delivered</h3>
+
+                            <p>
+                                Order successfully delivered.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
         </div>
 
-    `;
+    </section>
 
-}
-
-</script>
+</main>
 
 
 <?php
