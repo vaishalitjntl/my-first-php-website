@@ -4,100 +4,110 @@ include 'includes/header.php';
 
 <main>
 
-    <section class="page-header">
+    <section class="auth-page">
 
-        <div class="container">
+        <div class="auth-container">
 
-            <h1>Login</h1>
+            <!-- Left Side -->
+            <div class="auth-visual">
 
-            <p>
-                Login to access your account and manage your orders.
-            </p>
+                <div class="auth-visual-overlay">
+                    <span class="auth-label">MANUFACTURING SOLUTIONS</span>
 
-        </div>
+                    <h1>Welcome Back!</h1>
 
-    </section>
+                    <p>
+                        Login to your account and manage your orders,
+                        products and business requirements with ease.
+                    </p>
+                </div>
 
+            </div>
 
-    <section class="content-section">
+            <!-- Right Side -->
+            <div class="auth-form-section">
 
-        <div class="container">
+                <div class="auth-form-box">
 
-            <div class="login-box">
-
-                <h2>Customer Login</h2>
-
-                <form action="#" method="post">
-
-                    <div class="form-group">
-
-                        <label for="email">
-                            Email Address
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="Enter your email"
-                            required
-                        >
-
+                    <div class="auth-heading">
+                        <span>ACCOUNT LOGIN</span>
+                        <h2>Login to Your Account</h2>
+                        <p>
+                            Enter your details to continue.
+                        </p>
                     </div>
 
+                    <form action="#" method="post">
 
-                    <div class="form-group">
+                        <div class="auth-form-group">
 
-                        <label for="password">
-                            Password
-                        </label>
+                            <label for="email">
+                                Email Address
+                            </label>
 
-                        <input
-                            type="password"
-                            id="password"
-                            name="password"
-                            placeholder="Enter your password"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="login-options">
-
-                        <label>
                             <input
-                                type="checkbox"
-                                name="remember"
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required
                             >
 
-                            Remember Me
+                        </div>
 
-                        </label>
+                        <div class="auth-form-group">
 
-                        <a href="#">
-                            Forgot Password?
-                        </a>
+                            <label for="password">
+                                Password
+                            </label>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Enter your password"
+                                required
+                            >
+
+                        </div>
+
+                        <div class="auth-options">
+
+                            <label class="remember-option">
+                                <input
+                                    type="checkbox"
+                                    name="remember"
+                                >
+                                <span>Remember me</span>
+                            </label>
+
+                            <a href="#">
+                                Forgot Password?
+                            </a>
+
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="auth-submit"
+                        >
+                            Login
+                        </button>
+
+                    </form>
+
+                    <div class="auth-register-link">
+
+                        <p>
+                            Don't have an account?
+                            <a href="register.php">
+                                Register
+                            </a>
+                        </p>
 
                     </div>
 
-
-                    <button type="submit">
-                        Login
-                    </button>
-
-
-                    <p class="register-link">
-
-                        Don't have an account?
-
-                        <a href="register.php">
-                            Create an Account
-                        </a>
-
-                    </p>
-
-                </form>
+                </div>
 
             </div>
 
@@ -106,7 +116,6 @@ include 'includes/header.php';
     </section>
 
 </main>
-
 
 <?php
 include 'includes/footer.php';

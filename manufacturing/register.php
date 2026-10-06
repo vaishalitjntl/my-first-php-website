@@ -4,123 +4,103 @@ include 'includes/header.php';
 
 <main>
 
-    <section class="page-header">
+    <section class="auth-page">
 
-        <div class="container">
+        <div class="auth-container">
 
-            <h1>Create Account</h1>
+            <!-- Left Side -->
+            <div class="auth-visual">
 
-            <p>
-                Register with us to place and track your orders.
-            </p>
+                <div class="auth-visual-overlay">
 
-        </div>
+                    <span class="auth-label">
+                        MANUFACTURING SOLUTIONS
+                    </span>
 
-    </section>
+                    <h1>Create Your Account</h1>
+
+                    <p>
+                        Register with us to place orders, manage your
+                        account and easily track your business requirements.
+                    </p>
+
+                </div>
+
+            </div>
 
 
-    <section class="content-section">
+            <!-- Right Side -->
+            <div class="auth-form-section">
 
-        <div class="container">
+                <div class="auth-form-box">
 
-            <div class="register-box">
+                    <div class="auth-heading">
 
-                <h2>Customer Registration</h2>
+                        <span>NEW CUSTOMER</span>
 
-                <form action="#" method="post">
+                        <h2>Create an Account</h2>
 
-                    <div class="form-row">
+                        <p>
+                            Fill in your details to get started.
+                        </p>
 
-                        <div class="form-group">
+                    </div>
 
-                            <label for="first_name">
-                                First Name
+
+                    <form action="#" method="post">
+
+                        <div class="auth-form-group">
+
+                            <label for="name">
+                                Full Name
                             </label>
 
                             <input
                                 type="text"
-                                id="first_name"
-                                name="first_name"
-                                placeholder="Enter first name"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your full name"
                                 required
                             >
 
                         </div>
 
 
-                        <div class="form-group">
+                        <div class="auth-form-group">
 
-                            <label for="last_name">
-                                Last Name
+                            <label for="email">
+                                Email Address
                             </label>
 
                             <input
-                                type="text"
-                                id="last_name"
-                                name="last_name"
-                                placeholder="Enter last name"
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
                                 required
                             >
 
                         </div>
 
-                    </div>
+
+                        <div class="auth-form-group">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="Enter your phone number"
+                                required
+                            >
+
+                        </div>
 
 
-                    <div class="form-group">
-
-                        <label for="email">
-                            Email Address
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="Enter your email"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="phone">
-                            Phone Number
-                        </label>
-
-                        <input
-                            type="tel"
-                            id="phone"
-                            name="phone"
-                            placeholder="Enter your phone number"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="address">
-                            Address
-                        </label>
-
-                        <textarea
-                            id="address"
-                            name="address"
-                            rows="4"
-                            placeholder="Enter your address"
-                            required
-                        ></textarea>
-
-                    </div>
-
-
-                    <div class="form-row">
-
-                        <div class="form-group">
+                        <div class="auth-form-group">
 
                             <label for="password">
                                 Password
@@ -137,7 +117,7 @@ include 'includes/header.php';
                         </div>
 
 
-                        <div class="form-group">
+                        <div class="auth-form-group">
 
                             <label for="confirm_password">
                                 Confirm Password
@@ -153,25 +133,30 @@ include 'includes/header.php';
 
                         </div>
 
+
+                        <button
+                            type="submit"
+                            class="auth-submit"
+                        >
+                            Create Account
+                        </button>
+
+                    </form>
+
+
+                    <div class="auth-register-link">
+
+                        <p>
+                            Already have an account?
+
+                            <a href="login.php">
+                                Login
+                            </a>
+                        </p>
+
                     </div>
 
-
-                    <button type="submit">
-                        Create Account
-                    </button>
-
-
-                    <p class="login-link">
-
-                        Already have an account?
-
-                        <a href="login.php">
-                            Login Here
-                        </a>
-
-                    </p>
-
-                </form>
+                </div>
 
             </div>
 
@@ -180,7 +165,6 @@ include 'includes/header.php';
     </section>
 
 </main>
-
 
 <?php
 include 'includes/footer.php';

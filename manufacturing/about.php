@@ -5,88 +5,170 @@ include 'includes/header.php';
 <main>
 
     <!-- Page Header -->
+    <section class="page-header about-page-header">
+        <div class="container">
+            <span class="about-label">ABOUT US</span>
 
-    <section class="page-header">
+            <h1>Building Solutions Around Your Requirements</h1>
+
+            <p>
+                We provide reliable manufacturing products and solutions
+                designed to meet the practical requirements of businesses
+                and organizations.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- About Introduction -->
+    <section class="content-section">
 
         <div class="container">
 
-            <h1>About Us</h1>
+            <div class="about-intro">
 
-            <p>
-                Learn more about our company and the solutions we provide.
-            </p>
+                <div class="about-image">
+
+                    <img
+                        src="images/home-fire-safety.jpg"
+                        alt="Manufacturing and Safety Solutions"
+                    >
+
+                </div>
+
+
+                <div class="about-content">
+
+                    <span class="section-label">
+                        WHO WE ARE
+                    </span>
+
+                    <h2>
+                        Reliable Products. Practical Solutions.
+                    </h2>
+
+                    <p>
+                        Manufacturing Solutions focuses on providing
+                        quality products and practical solutions for
+                        different business and industrial requirements.
+                    </p>
+
+                    <p>
+                        Our product range includes garments and uniforms,
+                        fire and safety products, and water management
+                        solutions.
+                    </p>
+
+                    <p>
+                        We aim to make product selection, ordering,
+                        delivery and customer support simple and
+                        convenient.
+                    </p>
+
+                    <div class="about-highlights">
+
+                        <div>
+                            <strong>01</strong>
+                            <span>Quality Products</span>
+                        </div>
+
+                        <div>
+                            <strong>02</strong>
+                            <span>Reliable Service</span>
+                        </div>
+
+                        <div>
+                            <strong>03</strong>
+                            <span>Customer Focus</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
     </section>
 
 
-    <!-- About Company -->
-
-    <section class="content-section">
-
-        <div class="container">
-
-            <h2>Who We Are</h2>
-
-            <p>
-                We are a manufacturing-focused organization providing
-                products and solutions for garments, industrial safety,
-                fire safety, and water management requirements.
-            </p>
-
-            <p>
-                Our goal is to provide reliable products, transparent
-                communication, and a simple ordering experience for
-                our customers.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- What We Provide -->
-
-    <section class="content-section">
+    <!-- Why Choose Us -->
+    <section class="about-values">
 
         <div class="container">
 
-            <h2>What We Provide</h2>
+            <div class="section-title">
 
-            <div class="process-steps">
+                <span class="section-label">
+                    WHY CHOOSE US
+                </span>
 
-                <div class="process-step">
+                <h2>
+                    Built Around Your Requirements
+                </h2>
 
-                    <h3>Garments & Uniforms</h3>
+                <p>
+                    Our approach focuses on quality, reliability and
+                    customer satisfaction.
+                </p>
+
+            </div>
+
+
+            <div class="values-grid">
+
+                <div class="value-card">
+
+                    <span class="value-number">01</span>
+
+                    <h3>Quality</h3>
 
                     <p>
-                        Industrial and corporate uniforms designed
-                        for different workplace requirements.
+                        We focus on maintaining product quality and
+                        meeting customer requirements.
                     </p>
 
                 </div>
 
 
-                <div class="process-step">
+                <div class="value-card">
 
-                    <h3>Fire & Safety</h3>
+                    <span class="value-number">02</span>
+
+                    <h3>Reliability</h3>
 
                     <p>
-                        Safety products and equipment for industrial
-                        and workplace environments.
+                        We aim to provide dependable products and
+                        reliable service.
                     </p>
 
                 </div>
 
 
-                <div class="process-step">
+                <div class="value-card">
 
-                    <h3>Water Management</h3>
+                    <span class="value-number">03</span>
+
+                    <h3>Customer Focus</h3>
 
                     <p>
-                        Solutions designed to support water storage
-                        and management requirements.
+                        We understand customer requirements and work
+                        towards providing suitable solutions.
+                    </p>
+
+                </div>
+
+
+                <div class="value-card">
+
+                    <span class="value-number">04</span>
+
+                    <h3>Multiple Solutions</h3>
+
+                    <p>
+                        Our product categories cover garments, fire
+                        safety and water management requirements.
                     </p>
 
                 </div>
@@ -98,33 +180,35 @@ include 'includes/header.php';
     </section>
 
 
-    <!-- Our Approach -->
-
-    <section class="content-section">
+    <!-- CTA -->
+    <section class="about-cta">
 
         <div class="container">
 
-            <h2>Our Approach</h2>
+            <div>
 
-            <p>
-                We focus on understanding customer requirements,
-                providing suitable products, maintaining clear
-                communication, and supporting customers throughout
-                the order process.
-            </p>
+                <span>READY TO GET STARTED?</span>
 
-            <p>
-                From product selection to order confirmation and
-                delivery, we aim to make the process simple and
-                transparent.
-            </p>
+                <h2>
+                    Explore Our Products
+                </h2>
+
+                <p>
+                    Find the right products and solutions for your
+                    business requirements.
+                </p>
+
+            </div>
+
+            <a href="products.php" class="btn">
+                Explore Products →
+            </a>
 
         </div>
 
     </section>
 
 </main>
-
 
 <?php
 include 'includes/footer.php';

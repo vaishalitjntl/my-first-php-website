@@ -4,38 +4,98 @@ include 'includes/header.php';
 
 <main>
 
-    <!-- HERO SECTION -->
+    <!-- HERO -->
+    <section class="home-hero">
 
-    <section class="hero">
+        <div class="home-hero-overlay"></div>
 
-        <div class="container">
+        <div class="container home-hero-content">
 
-            <div class="hero-content">
+            <div class="home-hero-text">
 
-                <p class="hero-label">
-                    TRUSTED MANUFACTURING PARTNER
-                </p>
+                <span class="home-eyebrow">
+                    MANUFACTURING • SAFETY • SOLUTIONS
+                </span>
 
                 <h1>
-                    Quality Products.
-                    Reliable Manufacturing.
+                    Reliable Products.
+                    <span>Practical Solutions.</span>
                 </h1>
 
                 <p>
-                    We provide reliable manufacturing solutions
-                    designed to meet your business requirements.
+                    Explore dependable products and solutions designed
+                    for industrial, safety, garment and water management
+                    requirements.
                 </p>
 
-                <div class="hero-buttons">
+                <div class="home-hero-buttons">
 
-                    <a href="products.php"
-                       class="btn primary-btn">
-                        Explore Products
+                    <a href="products.php" class="home-primary-button">
+                        Explore Products →
                     </a>
 
-                    <a href="contact.php"
-                       class="btn secondary-btn">
-                        Contact Us
+                    <a href="contact.php" class="home-secondary-button">
+                        Contact Our Team
+                    </a>
+
+                </div>
+
+                <div class="home-hero-points">
+
+                    <div>
+                        <strong>01</strong>
+                        <span>Quality Products</span>
+                    </div>
+
+                    <div>
+                        <strong>02</strong>
+                        <span>Order Assistance</span>
+                    </div>
+
+                    <div>
+                        <strong>03</strong>
+                        <span>Reliable Delivery</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+    <section class="home-intro">
+
+        <div class="container">
+
+            <div class="home-intro-grid">
+
+                <div class="home-intro-heading">
+
+                    <span class="section-label">
+                        WHAT WE PROVIDE
+                    </span>
+
+                    <h2>
+                        Solutions built around
+                        real business requirements.
+                    </h2>
+
+                </div>
+
+                <div class="home-intro-text">
+
+                    <p>
+                        We provide a range of products and solutions
+                        supporting industrial workplaces, employee safety,
+                        garment requirements and water management needs.
+                    </p>
+
+                    <a href="about.php">
+                        Learn More About Us →
                     </a>
 
                 </div>
@@ -47,105 +107,128 @@ include 'includes/header.php';
     </section>
 
 
-    <!-- PRODUCTS SECTION -->
-
-    <section class="products-section">
+    <!-- CATEGORIES -->
+    <section class="home-categories">
 
         <div class="container">
 
-            <div class="section-heading">
+            <div class="home-section-heading">
 
-                <p class="section-label">
-                    WHAT WE PROVIDE
-                </p>
+                <div>
 
-                <h2>
-                    Our Product Categories
-                </h2>
+                    <span class="section-label">
+                        OUR PRODUCT AREAS
+                    </span>
 
-                <p>
-                    Explore our range of manufacturing products
-                    and solutions designed for different business
-                    requirements.
-                </p>
+                    <h2>
+                        Explore Our Categories
+                    </h2>
+
+                </div>
+
+                <a href="products.php">
+                    View All Products →
+                </a>
 
             </div>
 
 
-            <div class="product-cards">
+            <div class="home-category-grid">
 
+                <a href="products.php" class="home-category-card">
 
-                <!-- GARMENTS -->
-
-                <div class="product-card">
-
-                    <div class="product-icon">
+                    <div class="home-category-icon">
                         👕
                     </div>
+
+                    <span>CATEGORY 01</span>
 
                     <h3>
                         Garments & Uniforms
                     </h3>
 
                     <p>
-                        Quality garments and uniform solutions
-                        for organizations and businesses.
+                        Industrial uniforms, corporate wear
+                        and workplace garments.
                     </p>
 
-                    <a href="products.php">
-                        View Products →
-                    </a>
+                    <strong>
+                        Explore →
+                    </strong>
 
-                </div>
+                </a>
 
 
-                <!-- FIRE & SAFETY -->
+                <a href="products.php" class="home-category-card">
 
-                <div class="product-card">
-
-                    <div class="product-icon">
-                        🔥
+                    <div class="home-category-icon">
+                        ⛑️
                     </div>
+
+                    <span>CATEGORY 02</span>
 
                     <h3>
                         Fire & Safety
                     </h3>
 
                     <p>
-                        Fire safety and protection products
-                        designed for workplace requirements.
+                        Safety equipment and protective
+                        products for industrial environments.
                     </p>
 
-                    <a href="products.php">
-                        View Products →
-                    </a>
+                    <strong>
+                        Explore →
+                    </strong>
 
-                </div>
+                </a>
 
 
-                <!-- WATER MANAGEMENT -->
+                <a href="products.php" class="home-category-card">
 
-                <div class="product-card">
-
-                    <div class="product-icon">
+                    <div class="home-category-icon">
                         💧
                     </div>
+
+                    <span>CATEGORY 03</span>
 
                     <h3>
                         Water Management
                     </h3>
 
                     <p>
-                        Products and solutions supporting
-                        water management requirements.
+                        Practical water storage and management
+                        solutions for different requirements.
                     </p>
 
-                    <a href="products.php">
-                        View Products →
-                    </a>
+                    <strong>
+                        Explore →
+                    </strong>
 
-                </div>
+                </a>
 
+
+                <a href="products.php" class="home-category-card">
+
+                    <div class="home-category-icon">
+                        🏭
+                    </div>
+
+                    <span>CATEGORY 04</span>
+
+                    <h3>
+                        Industrial Solutions
+                    </h3>
+
+                    <p>
+                        Products and support for industrial
+                        and business requirements.
+                    </p>
+
+                    <strong>
+                        Explore →
+                    </strong>
+
+                </a>
 
             </div>
 
@@ -155,98 +238,105 @@ include 'includes/header.php';
 
 
     <!-- WHY CHOOSE US -->
-
-    <section class="why-section">
+    <section class="home-why">
 
         <div class="container">
 
-            <div class="section-heading">
+            <div class="home-why-layout">
 
-                <p class="section-label">
-                    WHY CHOOSE US
-                </p>
+                <div class="home-why-heading">
 
-                <h2>
-                    Built Around Your Requirements
-                </h2>
+                    <span class="section-label">
+                        WHY CHOOSE US
+                    </span>
 
-            </div>
-
-
-            <div class="why-cards">
-
-
-                <div class="why-card">
-
-                    <div class="why-number">
-                        01
-                    </div>
-
-                    <h3>
-                        Quality
-                    </h3>
+                    <h2>
+                        Simple process.
+                        Clear communication.
+                        Practical solutions.
+                    </h2>
 
                     <p>
-                        We focus on maintaining product quality
-                        and meeting customer requirements.
+                        From product selection to delivery, our process
+                        is designed to keep your requirements organized
+                        and easy to follow.
                     </p>
+
+                    <a href="how-it-works.php" class="home-outline-button">
+                        See How It Works →
+                    </a>
 
                 </div>
 
 
-                <div class="why-card">
+                <div class="home-benefits">
 
-                    <div class="why-number">
-                        02
+                    <div class="home-benefit">
+
+                        <div class="home-benefit-number">
+                            01
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Product Selection
+                            </h3>
+
+                            <p>
+                                Browse products and choose the items
+                                according to your requirement.
+                            </p>
+
+                        </div>
+
                     </div>
 
-                    <h3>
-                        Reliability
-                    </h3>
 
-                    <p>
-                        We aim to provide dependable products
-                        and reliable service.
-                    </p>
+                    <div class="home-benefit">
 
-                </div>
+                        <div class="home-benefit-number">
+                            02
+                        </div>
 
+                        <div>
 
-                <div class="why-card">
+                            <h3>
+                                Order Review
+                            </h3>
 
-                    <div class="why-number">
-                        03
+                            <p>
+                                Order details are reviewed before
+                                processing and confirmation.
+                            </p>
+
+                        </div>
+
                     </div>
 
-                    <h3>
-                        Customer Focus
-                    </h3>
 
-                    <p>
-                        Orders and requirements are handled
-                        according to customer needs.
-                    </p>
+                    <div class="home-benefit">
 
-                </div>
+                        <div class="home-benefit-number">
+                            03
+                        </div>
 
+                        <div>
 
-                <div class="why-card">
+                            <h3>
+                                Preparation & Delivery
+                            </h3>
 
-                    <div class="why-number">
-                        04
+                            <p>
+                                Confirmed products are prepared and
+                                delivered to the specified location.
+                            </p>
+
+                        </div>
+
                     </div>
 
-                    <h3>
-                        Timely Service
-                    </h3>
-
-                    <p>
-                        We work towards efficient processing
-                        and timely order fulfillment.
-                    </p>
-
                 </div>
-
 
             </div>
 
@@ -255,120 +345,41 @@ include 'includes/header.php';
     </section>
 
 
-    <!-- ORDER PROCESS -->
-
-    <section class="process-section">
-
-        <div class="container">
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    SIMPLE ORDERING
-                </p>
-
-                <h2>
-                    How It Works
-                </h2>
-
-            </div>
-
-
-            <div class="process-cards">
-
-
-                <div class="process-card">
-
-                    <span>01</span>
-
-                    <h3>
-                        Choose Products
-                    </h3>
-
-                    <p>
-                        Browse our products and select
-                        what you need.
-                    </p>
-
-                </div>
-
-
-                <div class="process-card">
-
-                    <span>02</span>
-
-                    <h3>
-                        Place Order
-                    </h3>
-
-                    <p>
-                        Select quantity and submit
-                        your order request.
-                    </p>
-
-                </div>
-
-
-                <div class="process-card">
-
-                    <span>03</span>
-
-                    <h3>
-                        Order Confirmation
-                    </h3>
-
-                    <p>
-                        Our team will verify your order
-                        and requirements.
-                    </p>
-
-                </div>
-
-
-                <div class="process-card">
-
-                    <span>04</span>
-
-                    <h3>
-                        Production & Delivery
-                    </h3>
-
-                    <p>
-                        Your order moves through production
-                        and delivery.
-                    </p>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CALL TO ACTION -->
-
-    <section class="cta-section">
+    <!-- FINAL CTA -->
+    <section class="home-cta">
 
         <div class="container">
 
-            <div class="cta-content">
+            <div class="home-cta-box">
 
-                <h2>
-                    Looking for the Right Manufacturing Solution?
-                </h2>
+                <div>
 
-                <p>
-                    Explore our products or contact our team
-                    to discuss your requirements.
-                </p>
+                    <span class="section-label">
+                        HAVE A REQUIREMENT?
+                    </span>
 
-                <a href="products.php"
-                   class="btn primary-btn">
-                    Explore Products
-                </a>
+                    <h2>
+                        Let's discuss your product needs.
+                    </h2>
+
+                    <p>
+                        Contact our team for product enquiries,
+                        bulk requirements and order assistance.
+                    </p>
+
+                </div>
+
+                <div class="home-cta-buttons">
+
+                    <a href="products.php" class="home-primary-button">
+                        Browse Products
+                    </a>
+
+                    <a href="contact.php" class="home-cta-link">
+                        Contact Us →
+                    </a>
+
+                </div>
 
             </div>
 
@@ -377,7 +388,6 @@ include 'includes/header.php';
     </section>
 
 </main>
-
 
 <?php
 include 'includes/footer.php';

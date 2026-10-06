@@ -4,38 +4,31 @@ include 'includes/header.php';
 
 <main>
 
-    <!-- PAGE HEADER -->
-
-    <section class="page-header">
-
+    <!-- Page Header -->
+    <section class="page-header products-page-header">
         <div class="container">
 
-            <p class="section-label">
+            <span class="products-label">
                 OUR PRODUCTS
-            </p>
+            </span>
 
-            <h1>
-                Products & Solutions
-            </h1>
+            <h1>Products & Solutions</h1>
 
             <p>
-                Explore our range of products and find the
-                right solution for your requirements.
+                Explore our range of manufacturing products and
+                solutions designed for different business requirements.
             </p>
 
         </div>
-
     </section>
 
 
-    <!-- PRODUCTS -->
-
-    <section class="products-list-section">
+    <!-- Products -->
+    <section class="content-section">
 
         <div class="container">
 
-            <!-- SEARCH AND FILTER -->
-
+            <!-- Search / Filter -->
             <div class="product-tools">
 
                 <div class="search-box">
@@ -56,15 +49,15 @@ include 'includes/header.php';
                             All Categories
                         </option>
 
-                        <option value="garments">
+                        <option value="Garments">
                             Garments & Uniforms
                         </option>
 
-                        <option value="fire">
+                        <option value="Fire">
                             Fire & Safety
                         </option>
 
-                        <option value="water">
+                        <option value="Water">
                             Water Management
                         </option>
 
@@ -75,26 +68,20 @@ include 'includes/header.php';
             </div>
 
 
-            <!-- PRODUCT GRID -->
-
+            <!-- Product Grid -->
             <div class="products-grid">
 
 
-                <!-- PRODUCT 1 -->
-
-                <div class="product-item"
-                     data-category="garments"
-                     data-name="Industrial Uniform">
+                <!-- Product 1 -->
+                <div
+                    class="product-item"
+                    data-category="Garments"
+                    data-name="Industrial Uniform"
+                >
 
                     <div class="product-image">
 
-                        <img
-                            src="images/industrial-uniform.jpg"
-                            alt="Industrial Uniform"
-                            onerror="this.style.display='none';"
-                        >
-
-                        <div class="image-placeholder">
+                        <div class="product-icon">
                             👕
                         </div>
 
@@ -111,20 +98,21 @@ include 'includes/header.php';
                         </h3>
 
                         <p>
-                            Durable and comfortable uniforms
-                            designed for industrial workplaces.
+                            Quality industrial uniforms suitable
+                            for organizations and workplaces.
                         </p>
 
                         <div class="product-bottom">
 
                             <span class="product-price">
-                                ₹ Contact
+                                ₹850
                             </span>
 
                             <a
-                                href="product-details.php?id=1"
-                                class="product-btn">
-                                View Details
+                                href="product-details.php"
+                                class="product-btn"
+                            >
+                                View Product
                             </a>
 
                         </div>
@@ -134,21 +122,16 @@ include 'includes/header.php';
                 </div>
 
 
-                <!-- PRODUCT 2 -->
-
-                <div class="product-item"
-                     data-category="garments"
-                     data-name="Corporate Uniform">
+                <!-- Product 2 -->
+                <div
+                    class="product-item"
+                    data-category="Garments"
+                    data-name="Corporate Uniform"
+                >
 
                     <div class="product-image">
 
-                        <img
-                            src="images/corporate-uniform.jpg"
-                            alt="Corporate Uniform"
-                            onerror="this.style.display='none';"
-                        >
-
-                        <div class="image-placeholder">
+                        <div class="product-icon">
                             👔
                         </div>
 
@@ -165,20 +148,21 @@ include 'includes/header.php';
                         </h3>
 
                         <p>
-                            Professional uniform solutions
+                            Professional corporate uniforms designed
                             for offices and organizations.
                         </p>
 
                         <div class="product-bottom">
 
                             <span class="product-price">
-                                ₹ Contact
+                                ₹750
                             </span>
 
                             <a
-                                href="product-details.php?id=2"
-                                class="product-btn">
-                                View Details
+                                href="product-details.php"
+                                class="product-btn"
+                            >
+                                View Product
                             </a>
 
                         </div>
@@ -188,22 +172,17 @@ include 'includes/header.php';
                 </div>
 
 
-                <!-- PRODUCT 3 -->
-
-                <div class="product-item"
-                     data-category="fire"
-                     data-name="Fire Safety Equipment">
+                <!-- Product 3 -->
+                <div
+                    class="product-item"
+                    data-category="Fire"
+                    data-name="Fire Safety Equipment"
+                >
 
                     <div class="product-image">
 
-                        <img
-                            src="images/fire-safety.jpg"
-                            alt="Fire Safety Equipment"
-                            onerror="this.style.display='none';"
-                        >
-
-                        <div class="image-placeholder">
-                            🔥
+                        <div class="product-icon">
+                            🧯
                         </div>
 
                     </div>
@@ -219,20 +198,21 @@ include 'includes/header.php';
                         </h3>
 
                         <p>
-                            Fire protection and workplace
-                            safety equipment.
+                            Fire protection equipment designed for
+                            workplace safety requirements.
                         </p>
 
                         <div class="product-bottom">
 
                             <span class="product-price">
-                                ₹ Contact
+                                ₹2,500
                             </span>
 
                             <a
-                                href="product-details.php?id=3"
-                                class="product-btn">
-                                View Details
+                                href="product-details.php"
+                                class="product-btn"
+                            >
+                                View Product
                             </a>
 
                         </div>
@@ -242,21 +222,16 @@ include 'includes/header.php';
                 </div>
 
 
-                <!-- PRODUCT 4 -->
-
-                <div class="product-item"
-                     data-category="fire"
-                     data-name="Safety Helmet">
+                <!-- Product 4 -->
+                <div
+                    class="product-item"
+                    data-category="Fire"
+                    data-name="Industrial Safety Helmet"
+                >
 
                     <div class="product-image">
 
-                        <img
-                            src="images/safety-helmet.jpg"
-                            alt="Safety Helmet"
-                            onerror="this.style.display='none';"
-                        >
-
-                        <div class="image-placeholder">
+                        <div class="product-icon">
                             ⛑️
                         </div>
 
@@ -273,20 +248,21 @@ include 'includes/header.php';
                         </h3>
 
                         <p>
-                            Protective safety helmets for
-                            industrial environments.
+                            Protective industrial safety helmet for
+                            workplace environments.
                         </p>
 
                         <div class="product-bottom">
 
                             <span class="product-price">
-                                ₹ Contact
+                                ₹450
                             </span>
 
                             <a
-                                href="product-details.php?id=4"
-                                class="product-btn">
-                                View Details
+                                href="product-details.php"
+                                class="product-btn"
+                            >
+                                View Product
                             </a>
 
                         </div>
@@ -296,21 +272,16 @@ include 'includes/header.php';
                 </div>
 
 
-                <!-- PRODUCT 5 -->
-
-                <div class="product-item"
-                     data-category="water"
-                     data-name="Water Management System">
+                <!-- Product 5 -->
+                <div
+                    class="product-item"
+                    data-category="Water"
+                    data-name="Water Management System"
+                >
 
                     <div class="product-image">
 
-                        <img
-                            src="images/water-management.jpg"
-                            alt="Water Management System"
-                            onerror="this.style.display='none';"
-                        >
-
-                        <div class="image-placeholder">
+                        <div class="product-icon">
                             💧
                         </div>
 
@@ -327,20 +298,21 @@ include 'includes/header.php';
                         </h3>
 
                         <p>
-                            Solutions designed to support
-                            efficient water management.
+                            Solutions designed to support efficient
+                            water management requirements.
                         </p>
 
                         <div class="product-bottom">
 
                             <span class="product-price">
-                                ₹ Contact
+                                ₹5,000
                             </span>
 
                             <a
-                                href="product-details.php?id=5"
-                                class="product-btn">
-                                View Details
+                                href="product-details.php"
+                                class="product-btn"
+                            >
+                                View Product
                             </a>
 
                         </div>
@@ -350,21 +322,16 @@ include 'includes/header.php';
                 </div>
 
 
-                <!-- PRODUCT 6 -->
-
-                <div class="product-item"
-                     data-category="water"
-                     data-name="Water Storage Solution">
+                <!-- Product 6 -->
+                <div
+                    class="product-item"
+                    data-category="Water"
+                    data-name="Water Storage Solution"
+                >
 
                     <div class="product-image">
 
-                        <img
-                            src="images/water-storage.jpg"
-                            alt="Water Storage Solution"
-                            onerror="this.style.display='none';"
-                        >
-
-                        <div class="image-placeholder">
+                        <div class="product-icon">
                             🚰
                         </div>
 
@@ -381,20 +348,21 @@ include 'includes/header.php';
                         </h3>
 
                         <p>
-                            Practical solutions for water
-                            storage and management requirements.
+                            Practical water storage solutions for
+                            business and industrial requirements.
                         </p>
 
                         <div class="product-bottom">
 
                             <span class="product-price">
-                                ₹ Contact
+                                ₹3,500
                             </span>
 
                             <a
-                                href="product-details.php?id=6"
-                                class="product-btn">
-                                View Details
+                                href="product-details.php"
+                                class="product-btn"
+                            >
+                                View Product
                             </a>
 
                         </div>
@@ -411,7 +379,6 @@ include 'includes/header.php';
     </section>
 
 </main>
-
 
 <?php
 include 'includes/footer.php';

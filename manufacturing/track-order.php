@@ -4,16 +4,20 @@ include 'includes/header.php';
 
 <main>
 
-    <!-- Page Header -->
-
-    <section class="page-header">
+    <section class="page-header track-page-header">
 
         <div class="container">
 
-            <h1>Track Your Order</h1>
+            <span class="track-label">
+                ORDER TRACKING
+            </span>
+
+            <h1>
+                Track Your Order
+            </h1>
 
             <p>
-                Check the current status of your order.
+                Check the current status and progress of your order.
             </p>
 
         </div>
@@ -21,197 +25,291 @@ include 'includes/header.php';
     </section>
 
 
-    <!-- Track Order -->
-
     <section class="content-section">
 
         <div class="container">
 
-            <div class="track-order-box">
+            <!-- Search Order -->
+            <div class="track-search-card">
 
-                <h2>Enter Your Order Details</h2>
+                <span class="section-label">
+                    ORDER LOOKUP
+                </span>
+
+                <h2>
+                    Find Your Order
+                </h2>
 
                 <p>
-                    Enter your order number and registered phone number
-                    to check your order status.
+                    Enter your order number to view the latest order status.
                 </p>
 
+                <div class="track-search-form">
 
-                <form action="#" method="post">
+                    <input
+                        type="text"
+                        placeholder="Example: ORD1001"
+                        value="ORD1001"
+                    >
 
-                    <div class="form-group">
-
-                        <label for="order_number">
-                            Order Number
-                        </label>
-
-                        <input
-                            type="text"
-                            id="order_number"
-                            name="order_number"
-                            placeholder="Example: ORD1001"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="phone">
-                            Phone Number
-                        </label>
-
-                        <input
-                            type="tel"
-                            id="phone"
-                            name="phone"
-                            placeholder="Enter your phone number"
-                            required
-                        >
-
-                    </div>
-
-
-                    <button type="submit">
-                        Track Order
+                    <button type="button">
+                        Track Order →
                     </button>
 
-                </form>
+                </div>
 
             </div>
 
 
-            <!-- Sample Order Status -->
+            <!-- Order Status -->
+            <div class="track-order-card">
 
-            <div class="order-tracking-result">
+                <div class="track-order-header">
 
-                <h2>Order Status</h2>
+                    <div>
 
-                <div class="tracking-order-info">
-
-                    <p>
-                        <strong>Order Number:</strong>
-                        ORD1001
-                    </p>
-
-                    <p>
-                        <strong>Customer:</strong>
-                        Sample Customer
-                    </p>
-
-                    <p>
-                        <strong>Order Date:</strong>
-                        04-10-2026
-                    </p>
-
-                    <p>
-                        <strong>Current Status:</strong>
-
-                        <span class="status-badge status-processing">
-                            Processing
+                        <span class="section-label">
+                            ORDER DETAILS
                         </span>
 
-                    </p>
+                        <h2>
+                            Order #ORD1001
+                        </h2>
+
+                        <p>
+                            Placed on 04 October 2026
+                        </p>
+
+                    </div>
+
+                    <span class="track-current-status">
+                        Processing
+                    </span>
 
                 </div>
 
 
-                <div class="tracking-timeline">
+                <!-- Progress -->
+                <div class="tracking-progress">
 
                     <div class="tracking-step completed">
 
-                        <div class="tracking-dot">
+                        <div class="tracking-icon">
                             ✓
                         </div>
 
-                        <div>
+                        <strong>
+                            Order Placed
+                        </strong>
 
-                            <h3>Order Placed</h3>
-
-                            <p>
-                                Your order has been received.
-                            </p>
-
-                        </div>
+                        <span>
+                            04 Oct
+                        </span>
 
                     </div>
 
 
+                    <div class="tracking-line completed-line"></div>
+
+
                     <div class="tracking-step completed">
 
-                        <div class="tracking-dot">
+                        <div class="tracking-icon">
                             ✓
                         </div>
 
-                        <div>
+                        <strong>
+                            Confirmed
+                        </strong>
 
-                            <h3>Order Confirmed</h3>
-
-                            <p>
-                                Your order has been confirmed.
-                            </p>
-
-                        </div>
+                        <span>
+                            04 Oct
+                        </span>
 
                     </div>
+
+
+                    <div class="tracking-line active-line"></div>
 
 
                     <div class="tracking-step active">
 
-                        <div class="tracking-dot">
+                        <div class="tracking-icon">
                             3
                         </div>
 
-                        <div>
+                        <strong>
+                            Processing
+                        </strong>
 
-                            <h3>Processing</h3>
-
-                            <p>
-                                Your order is currently being prepared.
-                            </p>
-
-                        </div>
+                        <span>
+                            Current
+                        </span>
 
                     </div>
 
 
+                    <div class="tracking-line"></div>
+
+
                     <div class="tracking-step">
 
-                        <div class="tracking-dot">
+                        <div class="tracking-icon">
                             4
                         </div>
 
-                        <div>
+                        <strong>
+                            Ready
+                        </strong>
 
-                            <h3>Out for Delivery</h3>
-
-                            <p>
-                                Your order will be delivered to you.
-                            </p>
-
-                        </div>
+                        <span>
+                            Pending
+                        </span>
 
                     </div>
+
+
+                    <div class="tracking-line"></div>
 
 
                     <div class="tracking-step">
 
-                        <div class="tracking-dot">
+                        <div class="tracking-icon">
                             5
+                        </div>
+
+                        <strong>
+                            Delivered
+                        </strong>
+
+                        <span>
+                            Pending
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Order Information -->
+                <div class="track-information">
+
+                    <div class="track-info-card">
+
+                        <span>
+                            CUSTOMER
+                        </span>
+
+                        <strong>
+                            Ravi Kumar
+                        </strong>
+
+                    </div>
+
+
+                    <div class="track-info-card">
+
+                        <span>
+                            DELIVERY LOCATION
+                        </span>
+
+                        <strong>
+                            Chennai, Tamil Nadu
+                        </strong>
+
+                    </div>
+
+
+                    <div class="track-info-card">
+
+                        <span>
+                            TOTAL AMOUNT
+                        </span>
+
+                        <strong>
+                            ₹5,150
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Products -->
+                <div class="track-products">
+
+                    <h3>
+                        Order Items
+                    </h3>
+
+
+                    <div class="track-product-row">
+
+                        <div class="track-product-icon">
+                            👕
                         </div>
 
                         <div>
 
-                            <h3>Delivered</h3>
+                            <strong>
+                                Industrial Uniform
+                            </strong>
 
-                            <p>
-                                Order successfully delivered.
-                            </p>
+                            <span>
+                                Quantity: 5
+                            </span>
 
                         </div>
 
+                        <strong>
+                            ₹4,250
+                        </strong>
+
                     </div>
+
+
+                    <div class="track-product-row">
+
+                        <div class="track-product-icon">
+                            ⛑️
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Industrial Safety Helmet
+                            </strong>
+
+                            <span>
+                                Quantity: 2
+                            </span>
+
+                        </div>
+
+                        <strong>
+                            ₹900
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="track-actions">
+
+                    <a
+                        href="products.php"
+                        class="track-shopping-button"
+                    >
+                        Continue Shopping
+                    </a>
+
+                    <a
+                        href="contact.php"
+                        class="track-contact-button"
+                    >
+                        Contact Support
+                    </a>
 
                 </div>
 
@@ -222,7 +320,6 @@ include 'includes/header.php';
     </section>
 
 </main>
-
 
 <?php
 include 'includes/footer.php';

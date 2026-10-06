@@ -1,313 +1,170 @@
 <?php
-
 include 'includes/header.php';
-
-
-/*
-|--------------------------------------------------------------------------
-| PRODUCT DATA
-|--------------------------------------------------------------------------
-| Temporary product data for development.
-| Later, we will move this into MySQL.
-|--------------------------------------------------------------------------
-*/
-
-$products = [
-
-    1 => [
-        "name" => "Industrial Uniform",
-        "category" => "Garments & Uniforms",
-        "description" => "Durable and comfortable industrial uniforms designed for workplace requirements.",
-        "price" => 850,
-        "image" => "images/industrial-uniform.jpg"
-    ],
-
-    2 => [
-        "name" => "Corporate Uniform",
-        "category" => "Garments & Uniforms",
-        "description" => "Professional uniform solutions designed for offices and organizations.",
-        "price" => 750,
-        "image" => "images/corporate-uniform.jpg"
-    ],
-
-    3 => [
-        "name" => "Fire Safety Equipment",
-        "category" => "Fire & Safety",
-        "description" => "Fire protection and workplace safety equipment designed for different safety requirements.",
-        "price" => 2500,
-        "image" => "images/fire-safety.jpg"
-    ],
-
-    4 => [
-        "name" => "Industrial Safety Helmet",
-        "category" => "Fire & Safety",
-        "description" => "Protective industrial safety helmet designed for workplace environments.",
-        "price" => 450,
-        "image" => "images/safety-helmet.jpg"
-    ],
-
-    5 => [
-        "name" => "Water Management System",
-        "category" => "Water Management",
-        "description" => "Solutions designed to support efficient water management requirements.",
-        "price" => 5000,
-        "image" => "images/water-management.jpg"
-    ],
-
-    6 => [
-        "name" => "Water Storage Solution",
-        "category" => "Water Management",
-        "description" => "Practical solutions for water storage and management requirements.",
-        "price" => 3500,
-        "image" => "images/water-storage.jpg"
-    ]
-
-];
-
-
-/*
-|--------------------------------------------------------------------------
-| GET PRODUCT ID
-|--------------------------------------------------------------------------
-*/
-
-$product_id = isset($_GET['id'])
-    ? (int) $_GET['id']
-    : 1;
-
-
-/*
-|--------------------------------------------------------------------------
-| CHECK PRODUCT
-|--------------------------------------------------------------------------
-*/
-
-if (!isset($products[$product_id])) {
-
-    echo "<div class='container'>";
-    echo "<h2>Product not found.</h2>";
-    echo "</div>";
-
-    include 'includes/footer.php';
-
-    exit;
-}
-
-
-$product = $products[$product_id];
-
 ?>
 
 <main>
 
-    <!-- BREADCRUMB -->
+    <section class="page-header product-details-header">
+        <div class="container">
 
-    <section class="product-breadcrumb">
+            <span class="product-details-label">
+                PRODUCT DETAILS
+            </span>
+
+            <h1>Industrial Uniform</h1>
+
+            <p>
+                Quality industrial uniform designed for workplace
+                and business requirements.
+            </p>
+
+        </div>
+    </section>
+
+
+    <section class="content-section">
 
         <div class="container">
 
-            <a href="index.php">
-                Home
-            </a>
+            <div class="product-detail">
 
-            <span> / </span>
+                <!-- Product Image -->
+                <div class="product-detail-image">
 
-            <a href="products.php">
-                Products
-            </a>
+                    <div class="product-detail-icon">
+                        👕
+                    </div>
 
-            <span> / </span>
+                </div>
 
-            <span>
-                <?php echo htmlspecialchars($product["name"]); ?>
-            </span>
+
+                <!-- Product Information -->
+                <div class="product-detail-content">
+
+                    <span class="product-category">
+                        Garments & Uniforms
+                    </span>
+
+                    <h1>
+                        Industrial Uniform
+                    </h1>
+
+                    <div class="product-detail-price">
+                        ₹850
+                    </div>
+
+                    <div class="product-availability">
+                        <span class="availability-dot"></span>
+                        In Stock
+                    </div>
+
+                    <p class="product-detail-description">
+                        Quality industrial uniforms suitable for
+                        organizations, businesses and workplace
+                        environments.
+                    </p>
+
+
+                    <div class="product-specifications">
+
+                        <div>
+                            <span>Product Category</span>
+                            <strong>Garments & Uniforms</strong>
+                        </div>
+
+                        <div>
+                            <span>Availability</span>
+                            <strong>Available</strong>
+                        </div>
+
+                        <div>
+                            <span>Product Type</span>
+                            <strong>Industrial Uniform</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="product-quantity">
+
+                        <label for="quantity">
+                            Quantity
+                        </label>
+
+                        <input
+                            type="number"
+                            id="quantity"
+                            name="quantity"
+                            value="1"
+                            min="1"
+                        >
+
+                    </div>
+
+
+                    <div class="product-detail-actions">
+
+                        <a
+                            href="cart.php"
+                            class="product-detail-cart"
+                        >
+                            Add to Cart
+                        </a>
+
+                        <a
+                            href="products.php"
+                            class="product-detail-back"
+                        >
+                            ← Back to Products
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
     </section>
 
 
-    <!-- PRODUCT DETAILS -->
-
-    <section class="product-details-section">
+    <!-- Product Information -->
+    <section class="product-info-section">
 
         <div class="container">
 
-            <div class="product-details">
+            <div class="product-info-box">
 
+                <span class="section-label">
+                    PRODUCT INFORMATION
+                </span>
 
-                <!-- PRODUCT IMAGE -->
+                <h2>
+                    Designed for Workplace Requirements
+                </h2>
 
-                <div class="product-detail-image">
+                <p>
+                    Our industrial uniform solutions are designed
+                    for organizations and businesses looking for
+                    practical and professional workplace clothing.
+                </p>
 
-                    <img
-                        src="<?php echo htmlspecialchars($product["image"]); ?>"
-                        alt="<?php echo htmlspecialchars($product["name"]); ?>"
-                        onerror="this.style.display='none';"
-                    >
+                <div class="product-benefits">
 
-                    <div class="detail-image-placeholder">
-                        📦
+                    <div>
+                        <strong>01</strong>
+                        <span>Professional Appearance</span>
                     </div>
 
-                </div>
-
-
-                <!-- PRODUCT INFORMATION -->
-
-                <div class="product-detail-info">
-
-                    <span class="detail-category">
-
-                        <?php
-                        echo htmlspecialchars(
-                            $product["category"]
-                        );
-                        ?>
-
-                    </span>
-
-
-                    <h1>
-
-                        <?php
-                        echo htmlspecialchars(
-                            $product["name"]
-                        );
-                        ?>
-
-                    </h1>
-
-
-                    <p class="detail-description">
-
-                        <?php
-                        echo htmlspecialchars(
-                            $product["description"]
-                        );
-                        ?>
-
-                    </p>
-
-
-                    <!-- PRICE -->
-
-                    <div class="detail-price">
-
-                        ₹<?php
-                        echo number_format(
-                            $product["price"]
-                        );
-                        ?>
-
-                        <span>
-                            / unit
-                        </span>
-
+                    <div>
+                        <strong>02</strong>
+                        <span>Workplace Suitable</span>
                     </div>
 
-
-                    <!-- QUANTITY -->
-
-                    <div class="quantity-section">
-
-                        <label for="quantity">
-                            Quantity
-                        </label>
-
-                        <div class="quantity-control">
-
-                            <button
-                                type="button"
-                                onclick="decreaseQuantity()">
-                                −
-                            </button>
-
-                            <input
-                                type="number"
-                                id="quantity"
-                                value="1"
-                                min="1"
-                            >
-
-                            <button
-                                type="button"
-                                onclick="increaseQuantity()">
-                                +
-                            </button>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- TOTAL -->
-
-                    <div class="product-total">
-
-                        Total:
-
-                        <strong id="productTotal">
-
-                            ₹<?php
-                            echo number_format(
-                                $product["price"]
-                            );
-                            ?>
-
-                        </strong>
-
-                    </div>
-
-
-                    <!-- BUTTONS -->
-
-                    <div class="detail-buttons">
-
-                        <button
-                            type="button"
-                            class="add-cart-btn"
-                            onclick="addToCart(
-                                <?php echo $product_id; ?>,
-                                '<?php echo htmlspecialchars(
-                                    $product["name"],
-                                    ENT_QUOTES
-                                ); ?>',
-                                <?php echo $product["price"]; ?>
-                            )">
-
-                            Add to Cart
-
-                        </button>
-
-
-                        <a
-                            href="cart.php"
-                            class="view-cart-btn">
-
-                            View Cart
-
-                        </a>
-
-                    </div>
-
-
-                    <!-- PRODUCT INFORMATION -->
-
-                    <div class="product-features">
-
-                        <div>
-                            ✓ Quality checked
-                        </div>
-
-                        <div>
-                            ✓ Reliable manufacturing
-                        </div>
-
-                        <div>
-                            ✓ Customer support
-                        </div>
-
+                    <div>
+                        <strong>03</strong>
+                        <span>Quality Focused</span>
                     </div>
 
                 </div>
@@ -320,121 +177,6 @@ $product = $products[$product_id];
 
 </main>
 
-
-<script>
-
-const productPrice =
-    <?php echo $product["price"]; ?>;
-
-
-function increaseQuantity() {
-
-    const quantity =
-        document.getElementById("quantity");
-
-    quantity.value =
-        parseInt(quantity.value) + 1;
-
-    updateTotal();
-
-}
-
-
-function decreaseQuantity() {
-
-    const quantity =
-        document.getElementById("quantity");
-
-    let current =
-        parseInt(quantity.value);
-
-    if (current > 1) {
-
-        quantity.value =
-            current - 1;
-
-    }
-
-    updateTotal();
-
-}
-
-
-function updateTotal() {
-
-    const quantity =
-        parseInt(
-            document.getElementById("quantity").value
-        );
-
-    const total =
-        productPrice * quantity;
-
-    document.getElementById("productTotal").innerText =
-        "₹" + total.toLocaleString("en-IN");
-
-}
-
-
-function addToCart(id, name, price) {
-
-    const quantity =
-        parseInt(
-            document.getElementById("quantity").value
-        );
-
-
-    let cart =
-        JSON.parse(
-            localStorage.getItem("manufacturingCart")
-        ) || [];
-
-
-    const existingProduct =
-        cart.find(
-            item => item.id === id
-        );
-
-
-    if (existingProduct) {
-
-        existingProduct.quantity += quantity;
-
-    } else {
-
-        cart.push({
-
-            id: id,
-
-            name: name,
-
-            price: price,
-
-            quantity: quantity
-
-        });
-
-    }
-
-
-    localStorage.setItem(
-        "manufacturingCart",
-        JSON.stringify(cart)
-    );
-
-
-    alert(
-        name +
-        " added to cart successfully!"
-    );
-
-}
-
-</script>
-
-
 <?php
-
 include 'includes/footer.php';
-
 ?>

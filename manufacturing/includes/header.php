@@ -5,13 +5,11 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Manufacturing Solutions</title>
 
-    <link rel="stylesheet"
-          href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -19,29 +17,33 @@
 
 <header class="site-header">
 
-    <div class="container">
+    <div class="container header-inner">
 
         <div class="logo">
+
             <a href="index.php">
-                Manufacturing Solutions
+                Manufacturing
+                <span>Solutions</span>
             </a>
+
         </div>
+
 
         <nav class="navigation">
 
             <a href="index.php">Home</a>
 
-           <a href="about.php">About Us</a>
+            <a href="about.php">About Us</a>
 
-           <a href="products.php">Products</a>
+            <a href="products.php">Products</a>
 
-           <a href="how-it-works.php">How It Works</a>
+            <a href="how-it-works.php">How It Works</a>
 
-           <a href="contact.php">Contact Us</a>
+            <a href="contact.php">Contact Us</a>
 
             <a href="track-order.php">Track Order</a>
 
-            <a href="login.php">Login</a>
+            <a href="account.php">My Account</a>
 
             <a href="cart.php" class="cart-link">
                 Cart

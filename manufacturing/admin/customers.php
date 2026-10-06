@@ -6,6 +6,7 @@ include 'admin-header.php';
 
 <main>
 
+    <!-- Page Header -->
     <section class="page-header">
 
         <div class="container">
@@ -21,6 +22,7 @@ include 'admin-header.php';
     </section>
 
 
+    <!-- Customers Section -->
     <section class="content-section">
 
         <div class="container">
@@ -40,6 +42,39 @@ include 'admin-header.php';
             </div>
 
 
+            <!-- Customer Summary -->
+            <div class="customer-summary">
+
+                <div class="customer-summary-card">
+
+                    <span>Total Customers</span>
+
+                    <strong>3</strong>
+
+                </div>
+
+
+                <div class="customer-summary-card">
+
+                    <span>Active Customers</span>
+
+                    <strong>2</strong>
+
+                </div>
+
+
+                <div class="customer-summary-card">
+
+                    <span>Inactive Customers</span>
+
+                    <strong>1</strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- Customers Table -->
             <div class="admin-table">
 
                 <table>
@@ -60,7 +95,7 @@ include 'admin-header.php';
 
                             <th>Status</th>
 
-                            <th>Actions</th>
+                            <th>Action</th>
 
                         </tr>
 
@@ -70,10 +105,11 @@ include 'admin-header.php';
                     <tbody>
 
 
+                        <!-- Customer 1 -->
                         <tr>
 
                             <td>
-                                1
+                                <strong>1</strong>
                             </td>
 
                             <td>
@@ -102,8 +138,8 @@ include 'admin-header.php';
 
                             <td>
 
-                                <a href="#">
-                                    View
+                                <a href="customer-details.php" class="admin-action">
+                                    View Customer
                                 </a>
 
                             </td>
@@ -111,10 +147,11 @@ include 'admin-header.php';
                         </tr>
 
 
+                        <!-- Customer 2 -->
                         <tr>
 
                             <td>
-                                2
+                                <strong>2</strong>
                             </td>
 
                             <td>
@@ -143,8 +180,8 @@ include 'admin-header.php';
 
                             <td>
 
-                                <a href="#">
-                                    View
+                                <a href="customer-details.php" class="admin-action">
+                                    View Customer
                                 </a>
 
                             </td>
@@ -152,10 +189,11 @@ include 'admin-header.php';
                         </tr>
 
 
+                        <!-- Customer 3 -->
                         <tr>
 
                             <td>
-                                3
+                                <strong>3</strong>
                             </td>
 
                             <td>
@@ -184,8 +222,9 @@ include 'admin-header.php';
 
                             <td>
 
-                                <a href="#">
-                                    View
+                                <a href="customer-details.php" class="admin-action">
+
+                                    View Customer
                                 </a>
 
                             </td>

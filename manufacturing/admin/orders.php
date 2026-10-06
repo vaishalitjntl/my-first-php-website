@@ -6,6 +6,7 @@ include 'admin-header.php';
 
 <main>
 
+    <!-- Page Header -->
     <section class="page-header">
 
         <div class="container">
@@ -21,6 +22,7 @@ include 'admin-header.php';
     </section>
 
 
+    <!-- Orders Section -->
     <section class="content-section">
 
         <div class="container">
@@ -40,6 +42,48 @@ include 'admin-header.php';
             </div>
 
 
+            <!-- Order Summary -->
+            <div class="order-summary">
+
+                <div class="order-summary-card">
+
+                    <span>Total Orders</span>
+
+                    <strong>3</strong>
+
+                </div>
+
+
+                <div class="order-summary-card">
+
+                    <span>Pending</span>
+
+                    <strong>1</strong>
+
+                </div>
+
+
+                <div class="order-summary-card">
+
+                    <span>Processing</span>
+
+                    <strong>1</strong>
+
+                </div>
+
+
+                <div class="order-summary-card">
+
+                    <span>Completed</span>
+
+                    <strong>1</strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- Orders Table -->
             <div class="admin-table">
 
                 <table>
@@ -60,7 +104,7 @@ include 'admin-header.php';
 
                             <th>Status</th>
 
-                            <th>Actions</th>
+                            <th>Action</th>
 
                         </tr>
 
@@ -70,10 +114,11 @@ include 'admin-header.php';
                     <tbody>
 
 
+                        <!-- Order 1 -->
                         <tr>
 
                             <td>
-                                ORD1001
+                                <strong>ORD1001</strong>
                             </td>
 
                             <td>
@@ -89,7 +134,11 @@ include 'admin-header.php';
                             </td>
 
                             <td>
-                                Pending
+
+                                <span class="payment-badge payment-pending">
+                                    Pending
+                                </span>
+
                             </td>
 
                             <td>
@@ -102,8 +151,9 @@ include 'admin-header.php';
 
                             <td>
 
-                                <a href="#">
-                                    View
+                                <a href="order-details.php" class="admin-action">
+
+                                    View Order
                                 </a>
 
                             </td>
@@ -111,10 +161,11 @@ include 'admin-header.php';
                         </tr>
 
 
+                        <!-- Order 2 -->
                         <tr>
 
                             <td>
-                                ORD1002
+                                <strong>ORD1002</strong>
                             </td>
 
                             <td>
@@ -130,7 +181,11 @@ include 'admin-header.php';
                             </td>
 
                             <td>
-                                Confirmed
+
+                                <span class="payment-badge payment-confirmed">
+                                    Confirmed
+                                </span>
+
                             </td>
 
                             <td>
@@ -143,8 +198,8 @@ include 'admin-header.php';
 
                             <td>
 
-                                <a href="#">
-                                    View
+                                <a href="#" class="admin-action">
+                                    View Order
                                 </a>
 
                             </td>
@@ -152,10 +207,11 @@ include 'admin-header.php';
                         </tr>
 
 
+                        <!-- Order 3 -->
                         <tr>
 
                             <td>
-                                ORD1003
+                                <strong>ORD1003</strong>
                             </td>
 
                             <td>
@@ -171,7 +227,11 @@ include 'admin-header.php';
                             </td>
 
                             <td>
-                                Pending
+
+                                <span class="payment-badge payment-pending">
+                                    Pending
+                                </span>
+
                             </td>
 
                             <td>
@@ -184,8 +244,8 @@ include 'admin-header.php';
 
                             <td>
 
-                                <a href="#">
-                                    View
+                                <a href="#" class="admin-action">
+                                    View Order
                                 </a>
 
                             </td>
