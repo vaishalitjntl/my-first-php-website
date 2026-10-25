@@ -14,12 +14,12 @@ include 'includes/header.php';
             <div class="home-hero-text">
 
                 <span class="home-eyebrow">
-                    MANUFACTURING • SAFETY • SOLUTIONS
+                     • SAFETY TODAY • SECURE TOMORROW •
                 </span>
 
                 <h1>
-                    Reliable Products.
-                    <span>Practical Solutions.</span>
+                    REDLINE
+                    <span>FIRE AND SAFETY EQUIPMENTS</span>
                 </h1>
 
                 <p>
@@ -80,8 +80,8 @@ include 'includes/header.php';
                     </span>
 
                     <h2>
-                        Solutions built around
-                        real business requirements.
+                        Complete Solutions for
+                         Safety, Garments & Industrial Supplies.
                     </h2>
 
                 </div>
@@ -89,9 +89,12 @@ include 'includes/header.php';
                 <div class="home-intro-text">
 
                     <p>
-                        We provide a range of products and solutions
-                        supporting industrial workplaces, employee safety,
-                        garment requirements and water management needs.
+                        We supply and support the installation of fire fighting systems
+                           and fire safety equipment. We provide quality garments, complete
+                             petrol bunk uniforms, pump and nozzle covers, fire extinguishers,
+                             distilled water, battery acid, grease, thermal paper rolls,
+                               fabrics and other essential industrial supplies to meet your
+                               business needs.
                     </p>
 
                     <a href="about.php">
@@ -108,133 +111,67 @@ include 'includes/header.php';
 
 
     <!-- CATEGORIES -->
-    <section class="home-categories">
+    
+<section class="product-areas">
+    <div class="container">
 
-        <div class="container">
+        <div class="section-heading">
+            <div>
+                <span class="section-label">OUR PRODUCT AREAS</span>
+                <h2>Explore Our Categories</h2>
+    
 
-            <div class="home-section-heading">
+        <div class="category-grid">
 
-                <div>
+            <a href="products.php" class="category-card">
+                <img
+                  src="images/garments.jpg"
+                  alt="Garments and industrial uniforms"
+                  class="category-image"
+                 >
+                <span class="category-label">CATEGORY 01</span>
+                <h3>Garments &amp; Uniforms</h3>
+                <p>
+                    Quality uniforms, corporate wear, industrial garments,
+                    and complete petrol bunk staff uniform sets.
+                </p>
+                <span class="category-explore">Explore →</span>
+            </a>
 
-                    <span class="section-label">
-                        OUR PRODUCT AREAS
-                    </span>
+            <a href="products.php" class="category-card">
+                <img
+                  src="images/fire-industry.jpg"
+                  alt="fire industry"
+                 class="category-image"
+                >
+                <span class="category-label">CATEGORY 02</span>
+                <h3>Fire Industry</h3>
+                <p>
+                    Fire extinguishers, fire fighting systems, safety
+                    equipment, and installation services.
+                </p>
+                <span class="category-explore">Explore →</span>
+            </a>
 
-                    <h2>
-                        Explore Our Categories
-                    </h2>
-
-                </div>
-
-                <a href="products.php">
-                    View All Products →
-                </a>
-
-            </div>
-
-
-            <div class="home-category-grid">
-
-                <a href="products.php" class="home-category-card">
-
-                    <div class="home-category-icon">
-                        👕
-                    </div>
-
-                    <span>CATEGORY 01</span>
-
-                    <h3>
-                        Garments & Uniforms
-                    </h3>
-
-                    <p>
-                        Industrial uniforms, corporate wear
-                        and workplace garments.
-                    </p>
-
-                    <strong>
-                        Explore →
-                    </strong>
-
-                </a>
-
-
-                <a href="products.php" class="home-category-card">
-
-                    <div class="home-category-icon">
-                        ⛑️
-                    </div>
-
-                    <span>CATEGORY 02</span>
-
-                    <h3>
-                        Fire & Safety
-                    </h3>
-
-                    <p>
-                        Safety equipment and protective
-                        products for industrial environments.
-                    </p>
-
-                    <strong>
-                        Explore →
-                    </strong>
-
-                </a>
-
-
-                <a href="products.php" class="home-category-card">
-
-                    <div class="home-category-icon">
-                        💧
-                    </div>
-
-                    <span>CATEGORY 03</span>
-
-                    <h3>
-                        Water Management
-                    </h3>
-
-                    <p>
-                        Practical water storage and management
-                        solutions for different requirements.
-                    </p>
-
-                    <strong>
-                        Explore →
-                    </strong>
-
-                </a>
-
-
-                <a href="products.php" class="home-category-card">
-
-                    <div class="home-category-icon">
-                        🏭
-                    </div>
-
-                    <span>CATEGORY 04</span>
-
-                    <h3>
-                        Industrial Solutions
-                    </h3>
-
-                    <p>
-                        Products and support for industrial
-                        and business requirements.
-                    </p>
-
-                    <strong>
-                        Explore →
-                    </strong>
-
-                </a>
-
-            </div>
+            <a href="products.php" class="category-card">
+                <img
+                  src="images/- petroleum-industry.jpg"
+                  alt="petroleum industry"
+                 class="category-image"
+                >
+                <span class="category-label">CATEGORY 03</span>
+                <h3>Petroleum Industry</h3>
+                <p>
+                    Petrol pump and nozzle covers, distilled water,
+                    thermal paper rolls, grease, and essential supplies.
+                </p>
+                <span class="category-explore">Explore →</span>
+            </a>
 
         </div>
+    </div>
+</section>
 
-    </section>
 
 
     <!-- WHY CHOOSE US -->
@@ -251,15 +188,12 @@ include 'includes/header.php';
                     </span>
 
                     <h2>
-                        Simple process.
-                        Clear communication.
-                        Practical solutions.
+                        Committed to Quality. Dedicated to You.
                     </h2>
 
                     <p>
-                        From product selection to delivery, our process
-                        is designed to keep your requirements organized
-                        and easy to follow.
+                        At Redline Fire and Safety Equipment, customer satisfaction is our priority. We are committed to providing quality products, reliable service, and friendly support to every customer. We understand your business requirements and strive to deliver the right solutions with care, professionalism, and a focus on long-term relationships.
+
                     </p>
 
                     <a href="how-it-works.php" class="home-outline-button">
