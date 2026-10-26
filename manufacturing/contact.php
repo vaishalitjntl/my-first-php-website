@@ -63,7 +63,9 @@ include 'includes/header.php';
                             </span>
 
                             <strong>
-                                Tamil Nadu, India
+                                No. 172, 2nd Gandhi Road, South Udayarpalayam, Attur, Narasingapuram, Attayampatti, Salem – 636016, Tamil Nadu (with additional branches in Coimbatore and Trichy)
+
+
                             </strong>
 
                         </div>
@@ -84,7 +86,7 @@ include 'includes/header.php';
                             </span>
 
                             <strong>
-                                +91 XXXXX XXXXX
+                                +91 94423 04996
                             </strong>
 
                         </div>
